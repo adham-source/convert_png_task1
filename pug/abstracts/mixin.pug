@@ -1,0 +1,46 @@
+//- To print tite page
+mixin titlePage(value = 'Page')
+    title= value
+
+
+//- To create items navbar
+mixin itemsNav()
+    each key, value in itemsNav
+        li()
+            a(href = `${key}` class="text-white")=value
+
+//- To create cards main content page
+mixin mainCards()
+    - for (let i= 1; i <= 12; i ++)
+        div(class="col-xl-3  col-lg-4 col-md-6 mb-4")
+            div(class="card text-center")
+                img(src="./assets/images/suez_cement_eg.svg" class="card-img-top")/
+                hr/
+                div(class="card-body")
+                    h6(class="card-title") أسمنت السويس
+                    a(href="#" class="card_link d-flex align-items-center justify-content-between") السعر يبدأ من 750 جم
+                        i(class="fas fa-chevron-left mx-2")
+
+
+//- To social icons
+mixin socialIcon()
+    each key, value in socialIcon
+        a(href=`${key}` class="mr-2")
+            i(class=`${value}`)
+
+//- listMainFooter
+mixin listMainFooter()
+    each value in listMainFooter
+        a(href="#" class="nav-link pl-0")=value
+//- listAccountFooter
+mixin listAccountFooter()
+    each value in listAccountFooter
+        a(href="#" class="nav-link pl-0")=value
+//- listSearchFooter
+mixin listSearchFooter()
+    each value in listSearchFooter
+        a(href="#" class="nav-link pl-0")=value
+
+
+                
+    

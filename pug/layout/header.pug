@@ -1,0 +1,57 @@
+// Top nav 
+section(class="top_nav bg-dark text-light")
+    .container 
+        div(class="row align-items-center py-1")
+            div(class="col-sm-6 d-flex justify-content-start align-items-center")
+                div(class="top_nav--left d-flex align-items-center")
+                    div(class="top_nav-lang my-1")
+                        img(src="./assets/images/en-flag.png", alt="flag", width="35", height="20")/
+                        span(class="mx-2") English
+                    div(class="top_nav-login mx-2")
+                        a(href="http://")
+                            span تسجيل الدخول
+                            i(class="fas fa-angle-down mx-1")
+            div(class="col-sm-6 d-flex justify-content-end align-items-center")
+                div(class="top_nav--right")
+                    div(class="top_nav-info my-1")
+                        span(class="mx-2") خدمة العملاء
+                        a(href="tel:16785")
+                            span(class="number mx-2") 16785
+                            i(class="fas fa-phone")
+
+// Top nav (logo and search)
+section(class="under_top_nav bg-white py-2")
+    .container 
+        div(class="row")
+            div(class="col-2 d-flex justify-content-start")
+                h2(class="logo under_top_nav-logo")
+                    a(href="/") خاماتو
+            div(class="col-10 d-flex justify-content-md-start justify-content-end align-items-center")
+                form(action="#", method="post", class="under_top_nav--form w-75")
+                    div(class="under_top_nav--form-content")
+                        input(type="text", class="form-control", placeholder="بحث عن جميع المنتجات ...")/
+                        button(type="submit")
+                            i(class="fas fa-search") 
+
+// Main nav
+div
+    ul(class="bg-dark")
+        +itemsNav()
+
+// Bottom nav
+section(class="bottom_nav bg-white py-md-2")
+    .container
+        div(class="row")
+            div(class="col-md-5 m-auto")
+                nav(aria-label="breadcrumb")
+                    ol(class="breadcrumb bg-white d-flex align-items-center mb-0")
+                        li(class="breadcrumb-item") 
+                            a(href="/" class="text-muted") الرئيسية
+                        li(class="breadcrumb-item active" aria-current="page") 
+                            a(href="#" class="border rounded-pill px-3 py-0 text-dark text-center") جميع الموردين
+            div(class="col-md-7 m-auto")
+                form(action="#", method="post", class="bottom_nav--form mb-md-0 mb-2 w-100")
+                    div(class="bottom_nav--form-content ")
+                        input(type="text", class="form-control w-100", placeholder="ابحث عن مورد أو منتج")/
+                        button(type="submit")
+                            i(class="fas fa-search")

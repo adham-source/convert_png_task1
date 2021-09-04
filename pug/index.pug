@@ -1,0 +1,15 @@
+include ./abstracts/variables.pug
+include ./abstracts/functions.pug
+include ./abstracts/mixin.pug
+
+
+doctype html
+html(lang="ar" dir ="rtl")
+    include ./layout/head.pug
+    body
+        include ./layout/header.pug
+
+        include ./pages/home.pug
+        
+        include ./layout/footer.pug
+        
