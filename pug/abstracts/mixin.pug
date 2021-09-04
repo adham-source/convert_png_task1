@@ -6,7 +6,7 @@ mixin titlePage(value = 'Page')
 //- To create items navbar
 mixin itemsNav()
     each key, value in itemsNav
-        li()
+        li(class="mx-2")
             a(href = `${key}` class="text-white")=value
 
 //- To create cards main content page

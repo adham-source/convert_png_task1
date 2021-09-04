@@ -182,6 +182,28 @@ button {
 main {
 }
 /* Top main content */
+.top_main-content .card {
+  border-radius: var(--main-radius);
+}
+
+.top_main-content .card_image {
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.top_main-content .offers,
+.top_main-content .price {
+  height: 3rem;
+}
+
+.top_main-content .price {
+  background: var(--main-color-orange);
+  color: var(--color-white);
+}
+
+.top_main-content .price i {
+  font-size: 2rem;
+}
 
 /* Main content */
 main .main_content .card {

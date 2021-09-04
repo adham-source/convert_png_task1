@@ -1,8 +1,30 @@
 // Main content page
-main
-    section(class="top_main-content")
+main(class="border-top")
+    section(class="top_main-content pt-3")
         .container 
-            div(class="row")
+            div(class="row d-flex align-items-end")
+                div(class="col-xl-3 col-lg-4 col-md-6")
+                    div(class="card card_image px-1")
+                        img(src="./assets/images/suez_cement_eg.svg" class="card-img-top p-4")/
+                        div(class="card-body")
+                            h5(class="card-title text-white text-center") حديد التسليح
+                div(class="col-xl-3 col-lg-4 col-md-6")
+                    div(class="card offers")
+                        div(class="card-body d-flex align-items-center justify-content-between")
+                            i(class="fas fa-th-large")
+                            h6(class="card-title mb-0") عرض جميع المنتجات   
+                            button(type="button", class="") 33
+                div(class="col-xl-3 col-lg-4 col-md-6 ")
+                    div(class="card offers")
+                        div(class="card-body d-flex align-items-center justify-content-between")
+                            i(class="fas fa-percent")
+                            h6(class="card-title mb-0 ") عروض خاماتو للأسمنت   
+                            button(type="button", class="") 4
+                div(class="col-xl-3 col-lg-4 col-md-6")
+                    div(class="card price")
+                        div(class="card-body d-flex align-items-center")
+                            i(class="far fa-envelope")
+                            h6(class="card-title mb-0 mx-2") طلب عرض أسعار أسمنت   
     section(class="main_content py-3 my-2")
         .container 
             div(class="row")
