@@ -184,6 +184,7 @@ main {
 /* Top main content */
 .top_main-content .card {
   border-radius: var(--main-radius);
+  margin-bottom: 1rem;
 }
 
 .top_main-content .card_image {
